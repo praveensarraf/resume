@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
 :root{
-  --body-bg-color: lightskyblue;
-  --main-color: #660000;
-  --main-color-light: #843232;
-  --main-color-dark: #330000;
+  --body-bg-color: #af86af;
+  --main-color: #680068;
+  --main-color-light: purple;
+  --main-color-dark: #480148;
   --text-color: #ffffff;
-  --text-heading: #ffd700;
-  --text-heading-dark: #ffa500;
+  --text-heading-dark: gold;
+  --text-heading: yellow;
 }
 
 *{
@@ -35,12 +35,13 @@ body{
   cursor: default;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  display: flex;
+  justify-content: center;
 }
 
 a{
   text-decoration: none;
   color: var(--text-color);
-  display: block;
   transition-duration: 0.3s;
 }
 
@@ -50,16 +51,16 @@ ul{
 }
 
 h3{
-  color: var(--text-heading);
+  color: var(--text-heading-dark);
   margin: 10px 0;
   font-size: 1.25em;
 }
 
 .resume{
-  width: 960px;
+  width: 100%;
   background: var(--main-color);
-  color: #ffffff;
-  margin: 10px auto;
+  color: var(--text-color);
+  margin: 30px;
   box-shadow: 5px 5px 2px var(--main-color-dark);
   position: relative;
   display: flex;
@@ -82,14 +83,15 @@ h3{
 }
 
 .resume .base{
-  width: 40%;
+  width: 25%;
   padding: 30px 20px;
   background: var(--main-color);
   color: var(--text-color);
+  position: relative;
 }
 
 .resume .base .profile{
-  background: var(--text-heading);
+  background: var(--text-heading-dark);
   padding: 35px 15px 45px 15px;
   margin: -30px -20px 45px -20px;
   position: relative;
@@ -101,8 +103,8 @@ h3{
   position: absolute;
   background: var(--main-color-light);
   width: 100%;
-  height: 50px;
-  bottom: -25px;
+  height: 75px;
+  bottom: -38px;
   left: 0;
   transform: skewY(-10deg);
   z-index: -1;
@@ -118,13 +120,6 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.resume .base .profile .fa-rocket{
-  font-size: 100px;
-  text-align: center;
-  margin: auto;
-  color: var(--main-color);
 }
 
 .resume .base .profile .info{
@@ -148,6 +143,7 @@ h3{
 }
 
 .resume .base .about{
+  margin-top: 80px;
   padding-top: 10px;
 }
 
@@ -195,10 +191,15 @@ h3{
   transition-duration: 0.3s;
 }
 
+.resume .base .follow {
+  position: absolute;
+  bottom: 20px;
+}
+
 .resume .base .follow .box{
   text-align: center;
   vertical-align: middle;
-  margin-top: 5px;
+  margin-top: 15px;
   padding-top: 5px;
 }
 
@@ -218,7 +219,9 @@ h3{
 }
 
 .resume .base .follow .box i{
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 30px;
   background: var(--text-heading-dark);
   width: 60px;
@@ -239,7 +242,7 @@ h3{
 }
 
 .resume .func{
-  width: 100%;
+  width: 75%;
   padding: 30px;
 }
 
@@ -375,7 +378,30 @@ h3{
   width: 48%;
   background: var(--main-color-light);
   padding: 15px;
+  padding-bottom: 50px;
 }
+
+.resume .func .myProjects{
+  clear: both;
+  background: var(--main-color-light);
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.resume .func .myProjects ul li{
+  margin: 15px 0;
+}
+
+.resume .func .myProjects ul li a{
+  color: var(--text-heading);
+  font-weight: bold;
+}
+
+.resume .func .myProjects ul li a:hover{
+  color: var(--text-heading-dark);
+}
+
+
 .resume .func .skills-prog {
   clear: both;
   background: var(--main-color-light);
@@ -539,12 +565,12 @@ h3{
   line-height: 25px;
 }
 
-.resume .func .declearation{
+.resume .func .declaration{
   background: var(--main-color-light);
   margin: 15px 0 0 0;
-  padding: 20px;
+  padding: 15px;
 }
 
-.resume .func .declearation p{
+.resume .func .declaration p{
   padding-bottom: 20px;
 }

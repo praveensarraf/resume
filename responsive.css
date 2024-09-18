@@ -1,0 +1,80 @@
+@media screen and (max-width: 911px) {
+    html, body {
+      font-size: 14px;
+    }
+  
+    .resume {
+      flex-direction: column;
+      margin: 0;
+    }
+  
+    .resume .base {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .resume .base .profile .photo img{
+        width: 50%;
+        margin: 20px 0 10px;
+    }
+
+    .resume .base .profile {
+        padding: 20px;
+    }
+
+    .resume .base .profile .info{
+        margin-bottom: 40px;
+    }
+
+    .resume .base .profile::after{
+        transform: skewY(-6deg);
+    }
+
+    .resume .base .follow{
+        position: static;
+        margin-top: 20px;
+    }
+
+    .resume .func {
+        width: 100%;
+        padding: 10px;
+    }
+  
+    .resume .func > div{
+        margin-bottom: 15px !important;
+    }
+
+    .resume .func .work,
+    .resume .func .edu,
+    .resume .func .myProjects,
+    .resume .func .skills-prog,
+    .resume .func .skills-soft,
+    .resume .func .interests {
+      width: 100%; 
+      margin: 0;
+    }
+  
+    .resume .func h3 {
+      font-size: 1.1em;
+    }
+  
+    .resume .func .skills-soft ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .resume .func .skills-soft ul li {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+  
+    .resume .func .interests-items {
+      flex-wrap: wrap;
+    }
+  
+    .resume .func .interests-items div {
+      width: 45%;
+      margin: 5px;
+    }
+  }
+  
